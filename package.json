@@ -1,0 +1,17 @@
+{
+  "name": "vscode-node-debugging",
+  "version": "0.0.1",
+  "description": "A demo showing how to use VS Code debugging in Node.js apps",
+  "main": "index.js",
+  "repository": "https://github.com/freddyfallon/vscode-node-debugging",
+  "author": "Freddy Fallon",
+  "license": "MIT",
+  "scripts": {
+    "start-dev": "nodemon --nolazy --inspect=0.0.0.0:9229 index.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "nodemon": "^1.18.7"
+  }
+}
