@@ -10,6 +10,17 @@
       "runtimeArgs": ["run", "start-dev"],
       "port": 9229,
       "restart": true
+    },
+    {
+      "type": "node",
+      "request": "attach",
+      "name": "Attach to Docker",
+      "protocol": "auto",
+      "port": 9229,
+      "restart": true,
+      "localRoot": "${workspaceFolder}",
+      "remoteRoot": "/app",
+      "skipFiles": ["<node_internals>/**/*.js"]
     }
   ]
 }
